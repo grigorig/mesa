@@ -4319,7 +4319,7 @@ static int tgsi_tex(struct r600_shader_ctx *ctx)
 	    inst->Texture.Texture == TGSI_TEXTURE_SHADOWCUBE_ARRAY) {
 		switch (opcode) {
 		case FETCH_OP_SAMPLE:
-			opcode = FETCH_OP_SAMPLE_C;
+			opcode = FETCH_OP_SAMPLE;
 			break;
 		case FETCH_OP_SAMPLE_L:
 			opcode = FETCH_OP_SAMPLE_C_L;
